@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <style>
+        table,td,th{
+                       margin-left: auto;
+                       margin-right: auto;
+                       align-content: center; }
+        th{ border: 1px solid black;}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;}
+
+    </style>
+    
+    <img align="middle" 
+         src="https://upload.wikimedia.org/wikipedia/commons/5/5e/UHCL_logo_%282%29.png"/>
+    <h:head>
+        <title>Course Evaluation</title>
+        <div align ="center">UHCL Course Evaluation</div>
+        <h:form>
+            <table  bgcolor = "#7fdbf5">
+            
+                <tr>
+                    <th>
+                        Course Name: <h:inputText id ="course" value ="#{surveyController.survey.course}"/>
+                    </th>
+                    <th>
+                        Instructor : <h:inputText id ="instructor" value ="#{surveycontroller.survey.instructor}"/>
+                    </th>
+                    <th>
+                        Term and Year: <h:inputText id="termYear" value ="#{surveycontroller.survey.termYear}"/>
+                    </th>
+                </tr>
+            </table>
+            <div align = "center">Please select the response that represents your opinion</div>
+            
+            <table  bgcolor = "#7fdbf5">
+            
+                <tr>
+                    <th>
+                        1. The instructor stimulated my interest in the subject.
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        2. The instructor managed classroom time and pace well
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        3. The instructor was organized and prepared for every class.
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        4. The instructor encouraged discussions and responded to questions.
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        5. The instructor demonstrated in-depth
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        6. The instructor appeared enthusiastic and interested.
+
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        7. The instructor used a variety of instructional 
+                        methods to reach the course objectives (e.g.
+                        group discussions, student presentations, etc.)
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{surveyController.survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        8. The instructor challenged students to do their best work.
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{survey.ratings}">
+                            <f:selectItem itemValue = "Strongly Agree" itemLabel = "Strongly Agree" />
+                            <f:selectItem itemValue = "Agree" itemLabel = "Agree" />
+                            <f:selectItem itemValue = "Neutral" itemLabel = "Neutral" />
+                            <f:selectItem itemValue = "Disagree" itemLabel = "Disagree" />
+                            <f:selectItem itemValue = "Strongly Disagree" itemLabel = "Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                       9. The instructor was accessible outside of class
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{survey.ratings}">
+                            <f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+                            <f:selectItem itemValue = "No" itemLabel = "No" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        10. Did the instructor actively attempt to prevent cheating in this course? 
+                    </th>
+                    <th>
+                        <h:selectOneRadio  value = "#{survey.ratings}">
+                            <f:selectItem itemValue = "Yes" itemLabel = "Yes" />
+                            <f:selectItem itemValue = "No" itemLabel = "No" />
+                        </h:selectOneRadio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Additional Comments(Teaching Approaches):
+                    </th>
+                    <th>
+                        <h:inputText size = "100" id ="comments" value ="#{surveycontroller.survey.comments}" />
+                    </th>
+                </tr>
+            </table>
+            <br/><br/><br/>
+                <h:commandButton value ="Submit and Continue" action="survey2">
+                </h:commandButton>
+        </h:form>
+    </h:head>
+
+    <body style="background-color:#cffcdb;">
+    </body>
+    
+</html>
+
